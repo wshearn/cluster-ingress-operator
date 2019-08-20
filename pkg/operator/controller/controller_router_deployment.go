@@ -129,6 +129,7 @@ func desiredRouterDeployment(ci *operatorv1.IngressController, ingressController
 				Key: "statsPassword",
 			},
 		}},
+		{Name: "ROUTER_CIPHERS", Value: "modern"},
 	}
 
 	// Enable prometheus metrics
